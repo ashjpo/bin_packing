@@ -1,0 +1,19 @@
+{
+    "name": "t1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron .",
+        "package": "electron-packager . eye_tracker --platform=win32 --icon=VR-logo.ico --electron-version=10.1.2 --out=./out_win --app-version=1.0.0 --overwrite --ignore=node_modules"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "electron-store": "^6.0.0"
+    },
+    "devDependencies": {
+        "electron-rebuild": "^2.3.5"
+    }
+}

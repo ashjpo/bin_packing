@@ -1,0 +1,5 @@
+.xq_bag {height: 30px; overflow: hidden; position: relative; margin: 0px auto; }
+.xq_navbar { width: 100%; height: 30px; overflow: hidden; box-sizing: border-box; box-sizing: inherit; }
+.xq_navli { list-style: none; display: inline-block; color: #fff; box-sizing: inherit; text-align: center; float: left; }
+.xq_navli a { display: block; color: currentcolor; text-decoration: none; }
+.xq_move { transition: all .3s ease-in-out; position: absolute; }

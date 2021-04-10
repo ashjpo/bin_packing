@@ -1,0 +1,214 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--my-init-->
+    <link rel="stylesheet" href="../public/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../public/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="../public/js/jquery-1.7.js"></script>
+    <style>
+        #header{
+            height: 40px;
+        }
+
+        #footer{
+            position: relative;
+            bottom: 0px;
+            font-size: 12px;
+            width: 100%;
+            height: 40px;
+        }
+
+        #main{
+            overflow: hidden;
+            min-height: calc(100% - 40px);
+        }
+
+        #left{
+          float: left;
+          display: inline-block;
+          width: 15%;
+          height: 100%;
+        }
+        #right{
+          float: left;
+          display: inline-block;
+          width: 100%;
+        }
+
+        #mws-navigation{
+          position: relative;
+          height: 100%;
+        }
+
+        #page{
+            min-height: calc(100% - 40px);
+        }
+
+        #page_content{
+            width: 80%;
+            margin: 0px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="base"></div>
+    <div id="container">
+        <div id="header"></div>
+        <div id="main">
+            <!--<div id="left"></div>-->
+            <div id="right">
+                <div id="page">
+                    <div id="page_content">
+                        <center style="margin-top: 20px;"><h4>添加货箱&nbsp;&nbsp;</h4></center>
+                        <!--p1-->
+                        <div class="panel panel-primary" style="margin-top: 20px;">
+                            <div class="panel-heading">基本信息</div>
+                            <div class="panel-body">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">容器长度[w](cm)&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="box_w" type="text" class="form-control" placeholder="容器长度" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">容器宽度[d](cm)&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="box_d" type="text" class="form-control" placeholder="容器宽度" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">容器高度[h](cm)&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="box_h" type="text" class="form-control" placeholder="容器高度" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">容器最大数量[num]&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="box_n" type="text" class="form-control" placeholder="容器最大数量" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page_content">
+                        <center style="margin-top: 20px;"><h4>添加货物</h4></center>
+                        <!--p1-->
+                        <div class="panel panel-primary" style="margin-top: 20px;">
+                            <div class="panel-heading">货物尺寸</div>
+                            <div class="panel-body">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">货物长度[w](cm)&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="goods_w" type="text" class="form-control" placeholder="货物长度" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">货物宽度[d](cm)&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="goods_d" type="text" class="form-control" placeholder="货物宽度" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">货物高度[h](cm)&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="goods_h" type="text" class="form-control" placeholder="货物高度" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group input-group-sm" style="">
+                                                <span class="input-group-addon" id="sizing-addon3">数量[num]&nbsp;&nbsp;<span class="label label-danger">必填</span></span>
+                                                <input id="goods_n" type="text" class="form-control" placeholder="货物数量" aria-describedby="sizing-addon3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="add_goods" type="button" class="btn btn-warning" style="float: right;margin-right: 20px;margin-top: 20px;">添加该类型货物</button>
+                                <br>
+                                <div>
+                                    <div class="list-group" id="add_goods_list" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="cal" type="button" class="btn btn-primary" style="float: right;margin-right: 20px;margin-top: 20px;">计算装箱方式</button>
+                </div>
+                <div id="footer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../public/common.js"></script>
+<script type="text/javascript" src="./edit_box_render.js"></script>
+<script>
+    var goods_index=1;
+    var goods = new Array();
+    var goods_tag=false;
+    $("#add_goods").click(function(){
+        if($("#goods_w").val()=="" || $("#goods_d").val()=="" || $("#goods_h").val()=="" || $("#goods_n").val()==""){
+            alert("请输入货物信息");
+            return false;
+        }
+        var goods_w=parseInt($("#goods_w").val());
+        var goods_d=parseInt($("#goods_d").val());
+        var goods_h=parseInt($("#goods_h").val());
+        var goods_n=parseInt($("#goods_n").val());
+        for(var i=0;i<goods.length;i++){
+            if(goods[i][0]==goods_w && goods[i][1]==goods_d && goods[i][2]==goods_h){
+                goods_n=goods_n+goods[i][3];
+                goods[i][3]=goods_n;
+                goods_tag=true;
+                var gindex=goods[i][4];
+                break;
+            }
+        }
+        if(!goods_tag){
+            var temp=new Array(goods_w,goods_d,goods_h,goods_n,goods_index);
+            var add_mes="货物"+goods_index+": Width: "+goods_w+" cm  "+"Depth: "+goods_d+" cm  "+"Height: "+goods_h+" cm  "+"-->数量: "+goods_n+"件";
+            $("#add_goods_list").append("<a id='goods_list_"+goods_index+"' href='#' class='list-group-item'>"+add_mes+"</a>");
+        }else{
+            var add_mes="货物"+gindex+": Width: "+goods_w+" cm  "+"Depth: "+goods_d+" cm  "+"Height: "+goods_h+" cm  "+"-->数量: "+goods_n+"件";
+            $("#goods_list_"+gindex).html(add_mes);
+        }
+        for(var j=0;j<goods_n;j++){
+            goods.push(temp);
+        }
+        goods_index=goods_index+1;
+        goods_tag=false;
+    })
+
+
+
+    $("#cal").click(function(){
+        if($("#box_w").val()=="" || $("#box_d").val()=="" || $("#box_h").val()=="" || $("#box_n").val()==""){
+            alert("请输入货箱信息");
+            return false;
+        }
+        var box_w=parseInt($("#box_w").val());
+        var box_d=parseInt($("#box_d").val());
+        var box_h=parseInt($("#box_h").val());
+        var box_n=parseInt($("#box_n").val());
+        
+        server_content.main_box=new Array(box_w,box_d,box_h,box_n);
+        server_content.main_goods=goods;
+        console.log(goods);
+        var url='../test/show.html';
+        window.location.href=url;
+    })
+
+
+
+
+</script>
+</html>

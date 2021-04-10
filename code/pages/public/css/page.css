@@ -1,0 +1,37 @@
+/*分页*/
+			#page p {
+			    float: left;
+			    padding: 2px 12px;
+			    font-size: 12px;
+			    height: 24px;
+			    line-height: 24px;
+			    color: #bbb;
+			    border: 1px #ccc solid;
+			    background: #fcfcfc;
+			    margin-right: 8px;
+			}
+
+			#page a {
+			    display: block;
+			    float: left;
+			    margin-right: 10px;
+			    padding: 2px 12px;
+			    height: 24px;
+			    border: 1px #cccccc solid;
+			    background: #fff;
+			    text-decoration: none;
+			    color: #808080;
+			    font-size: 12px;
+			    line-height: 24px;
+			}
+
+			#page a.cur {
+			    border: none;
+			    background: #077ee3;
+			    color: #fff;
+			}
+
+			#footer_ye_div{
+				display: inline-block;
+				margin-left: 80px;
+			}
